@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="navigation">
-      <a class="navigation-logo" href="">
+      <a class="navigation-logo" href="index.html">
         <img
           class="logo"
           src="/images/logo.svg"
@@ -22,23 +22,23 @@
           <li class="navigation-item navigation-item-current">
             <a class="navigation-link" href="">Главная</a>
           </li>
-          <li class="navigation-item navigation-item-current">
-            <a class="navigation-link" href="">о Седоне</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="">О Седоне</a>
           </li>
-          <li class="navigation-item navigation-item-current">
+          <li class="navigation-item ">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
           <li class="navigation-user-item">
-            <a class="navigation-user-link search-icon" href="">
+            <a class="navigation-user-link search-icon" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link favourite-icon" href="favorit.html">
               <span class="visually-hidden">Избранное</span>
-              <span class="visually-hidden">12</span>
+              <span class="favourite-number">12</span>
             </a>
           </li>
           <li class="navigation-user-item">
@@ -54,6 +54,8 @@
           class="logo"
           src="/images/welcome.svg"
           alt="приветствие сайта Седона"
+          width="485"
+          height="352"
         />
       </section>
       <section class="advantages-block">
@@ -67,7 +69,7 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item pictures">
             <div class="advantages-text">
               <h3 class="advantages-heading">Настоящий<br />Городок</h3>
               <p class="description">
@@ -82,25 +84,25 @@
               height="385"
             />
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-heading">Небольшая<br />Площадь</h3>
+          <li class="advantages-item-block">
+            <h3 class="advantages-heading">Небольшая<br/>Площадь</h3>
             <p class="description description-color">
               Все достопримечательности находятся очень близко
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item-block light-blue">
             <h3 class="advantages-heading">Красивая<br />дорога</h3>
             <p class="description description-color">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item-block">
             <h3 class="advantages-heading">Мало<br />туристов</h3>
             <p class="description description-color">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item pictures">
             <div class="advantages-text">
               <h3 class="advantages-heading">Там есть<br />мост дьявола</h3>
               <p class="description">
@@ -127,9 +129,9 @@
         </section>
         <div class="service">
           <ul class="service-list">
-            <ol class="service-item">
+            <ol class="service-item light-blue">
               <div class="service-block">
-                <img src="" alt="Логотип дома" />
+                <img  src="/images/icons/house.svg" alt="Логотип дома" />
                 <h4 class="service-heading">Жильё</h4>
                 <p class="description">
                   Рекомендуем пожить <br />в настоящем мотеле,<br />
@@ -139,7 +141,7 @@
             </ol>
             <ol class="service-item">
               <div class="service-block">
-                <img src="" alt="иконка еды" />
+                <img src="/images/icons/food.svg" alt="иконка еды" />
                 <h4 class="service-heading">Еда</h4>
                 <p class="description">
                   Всегда заказывайте<br />топовый фирменный бургер<br />,вы не
@@ -147,9 +149,9 @@
                 </p>
               </div>
             </ol>
-            <ol class="service-item">
+            <ol class="service-item light-blue">
               <div class="service-block">
-                <img src="" alt="иконка сувениров" />
+                <img src="/images/icons/gift.svg" alt="иконка сувениров" />
                 <h4 class="service-heading">Сувениры</h4>
                 <p class="description">
                   Не только китайского<br />,но и настоящего местного<br />производства!
@@ -172,7 +174,7 @@
         <div class="subscribe-block">
           <h2 class="header-block-two">Подпишитесь на рассылку</h2>
           <p class="description-block">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама,<br> честное бойскаутское!
           </p>
           <label>
             <form
@@ -194,7 +196,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="social-container">
+      <div class="social-container">
         <ul class="social-list">
           <li class="social-item">
             <a
@@ -205,7 +207,7 @@
               <span class="visually-hidden"
                 >Ссылка для перехода во вконтакте</span
               >
-              <img src="" alt="Иконка вконтакте" />
+              <img src="images/icons/social-vk.svg" alt="Иконка вконтакте" />
             </a>
           </li>
           <li class="social-item">
@@ -217,21 +219,21 @@
               <span class="visually-hidden"
                 >ссылка для перехода в Телеграм</span
               >
-              <img src="" alt="Иконка Телеграм" />
+              <img src="images/icons/social-telegram.svg" alt="Иконка Телеграм" />
             </a>
           </li>
           <li class="social-item">
             <a href="" class="social-link" target="_blank">
               <span class="visually-hidden">ссылка для перехода на Ютуб</span>
-              <img src="images/icons/youtube.svg" alt="Логотип Ютуб" />
+              <img src="images/icons/social-youtube.svg" alt="Логотип Ютуб" />
             </a>
           </li>
         </ul>
-      </section>
-      <section class="footer-contact-number">
+
+      <div class="footer-contact-number">
         <a class="footer-number" href="tel:88128121212">+7 (812) 812-12-12</a>
-      </section>
-      <section class="footer-contact-logo">
+      </div>
+      <div class="footer-contact-logo">
         <a
           class="page-footer-contact-logo-htmlacademy"
           href="https://htmlacademy.ru/intensive/htmlcss"
@@ -243,7 +245,7 @@
             alt="Логотип htmlacademy"
           />
         </a>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
